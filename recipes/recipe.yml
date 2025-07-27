@@ -35,15 +35,17 @@ modules:
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    # system:
-    #   # If no repo information is specified, Flathub will be used by default
-    #   install:
-    #     - org.mozilla.firefox
-    #     - org.gnome.Loupe
-    #   remove:
-    #     - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+  # - type: default-flatpaks
+  #   configurations:
+  #     - scope: user
+  #       repo:
+  #         # you can override the title to make inclusion of both system and user repos clearer
+  #         title: Flathub (user)
+  #     - notify: true
+  #       scope: system
+  #       repo:
+  #         title: Flathub (system)
+  #       install: # system flatpaks we want all users to have and not remove
+  #         - org.mozilla.firefox
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
