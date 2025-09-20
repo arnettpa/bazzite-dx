@@ -28,6 +28,8 @@ modules:
       - qemu
       - code
       - golang
+      - dotnet-sdk-9.0
+      - dotnet-runtime-9.0
       # - ghostty
     # remove:
       # example: removing firefox (in favor of the flatpak)
