@@ -12,6 +12,10 @@ image-version: latest
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: script
+    snippets:
+      # Workaround to allow installing nix with composefs
+      - "mkdir /nix" 
   - type: files
     files:
       - source: system
