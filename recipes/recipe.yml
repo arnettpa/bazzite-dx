@@ -12,13 +12,17 @@ image-version: latest
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: script
+    snippets:
+      - "mkdir /nix" # Workaround to allow installing nix with composefs
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
       # - source: my-image/usr   # copies `files/my-image/usr/*` to `/usr/` inside the image
       #   destination: /usr
-
+  - type: justfiles
+    validate: true
   - type: rpm-ostree
     # repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo

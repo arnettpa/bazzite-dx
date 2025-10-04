@@ -4,6 +4,7 @@ This is a personal and unofficial developer flavor of [Bazzite](https://github.c
 
 Main Packages Added:
 
+- Nix package manager
 - Virtualization: virt-manager, edk2-ovmf, qemu
 - Editor: Vscode
 
@@ -37,7 +38,8 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 ## Additional Setup
 
-- To setup kernel args and vfio drivers for virtualization, run `setup-virtualization.sh` after booting into the image. (TODO: figure out how to build this into the image)
+- To setup kernel args and vfio drivers for virtualization, run `setup-virtualization.sh` after booting into the image.
+- To setup nix via [determinate nix-installer](https://github.com/DeterminateSystems/nix-installer), run `ujust nix-setup`.
 
 ## ISO
 
