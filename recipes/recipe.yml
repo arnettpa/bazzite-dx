@@ -30,6 +30,7 @@ modules:
       - virt-manager
       - edk2-ovmf
       - qemu
+      - gpu-screen-recorder-ui
       - code
       - git-lfs
       - golang
