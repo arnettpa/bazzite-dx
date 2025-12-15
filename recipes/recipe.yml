@@ -24,8 +24,8 @@ modules:
   - type: justfiles
     validate: true
   - type: dnf
-    repos:
-      copr:
+    # repos:
+    #   copr:
         # - atim/starshipo
     install:
       packages:
