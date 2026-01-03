@@ -34,7 +34,6 @@ modules:
         - qemu
         - gpu-screen-recorder-ui
         - code
-        - git-lfs
         - golang
         - dotnet-sdk-9.0
         - dotnet-runtime-9.0
