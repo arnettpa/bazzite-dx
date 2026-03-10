@@ -6,7 +6,7 @@ name: bazzite-dx
 description: Development focused image based on Bazzite with proprietary Nvidia drivers.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-nvidia
+base-image: ghcr.io/ublue-os/bazzite-nvidia-open
 image-version: latest
 
 # module configuration, executed in order
