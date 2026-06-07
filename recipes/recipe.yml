@@ -35,8 +35,8 @@ modules:
         - gpu-screen-recorder-ui
         - code
         - golang
-        - dotnet-sdk-9.0
-        - dotnet-runtime-9.0
+        - dotnet-sdk-10.0
+        - dotnet-runtime-10.0
         # - ghostty
     # remove:
     #   packages:
