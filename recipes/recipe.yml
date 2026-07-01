@@ -32,6 +32,7 @@ modules:
         - virt-manager
         - edk2-ovmf
         - qemu
+        - firejail
         - gpu-screen-recorder-ui
         - code
         - golang
